@@ -4,7 +4,7 @@ Setup and Configuration details of a Flask Web Application on a AWS Lightsail In
 # Server Details
 The server is built on a fresh install of Ubuntu 18.04\
 The server IP is: 13.211.172.187\
-Hostname: ec2-13-211-172-187.ap-southeast-2.compute.amazonaws.com
+Hostname: ec2-13-211-172-187.ap-southeast-2.compute.amazonaws.com\
 The server is hosted on Amazon Lightsail in the region ap-southeast-2a (Sydney)
 
 # Ports
