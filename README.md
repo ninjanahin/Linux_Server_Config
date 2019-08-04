@@ -4,6 +4,7 @@ Setup and Configuration details of a Flask Web Application on a AWS Lightsail In
 # Server Details
 The server is built on a fresh install of Ubuntu 18.04\
 The server IP is: 13.211.172.187\
+Hostname: ec2-13-211-172-187.ap-southeast-2.compute.amazonaws.com
 The server is hosted on Amazon Lightsail in the region ap-southeast-2a (Sydney)
 
 # Ports
@@ -57,7 +58,30 @@ The following is what steps were taken to setup and configure the web server for
     - Enable the virtual host by using the sudo a2ensite FlaskApp command
 15. Restarted apache2 service (sudo service apache2 restart)
 16. Set the timezone to UTC using sudo timedatectl set-timezone UTC
+17. Edit sshd_config in /etc/ssh to remove rootLogin
+    - PermitRootLogin -> No
 
+# References
+Below are a list of resources/articles that I used to aid with performing the setup process:
+* https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04
+* https://www.learndatasci.com/tutorials/using-databases-python-postgres-sqlalchemy-and-alembic/
+* http://gavinmarsh.io/blog/amazon_lightsail/
+* https://stackoverflow.com/questions/10845998/i-forgot-the-password-i-entered-during-postgres-installation
+* https://au.godaddy.com/help/changing-the-ssh-port-for-your-linux-server-7306
+* https://realpython.com/flask-by-example-part-2-postgres-sqlalchemy-and-alembic/
+* https://www.codementor.io/abhishake/minimal-apache-configuration-for-deploying-a-flask-app-ubuntu-18-04-phu50a7ft
+* https://modwsgi.readthedocs.io/en/develop/configuration-directives/WSGIScriptAlias.html
+* https://flask.palletsprojects.com/en/1.1.x/deploying/mod_wsgi/
+* https://stackoverflow.com/questions/19344252/how-to-install-configure-mod-wsgi-for-py3
+* https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2
+* https://devops.ionos.com/tutorials/use-ssh-keys-with-putty-on-windows/
+* https://askubuntu.com/questions/138423/how-do-i-change-my-timezone-to-utc-gmt
+* https://www.dummies.com/programming/python/how-to-find-path-information-in-python/
+* https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-ubuntu-quickstart
+* https://enterprise.arcgis.com/en/server/10.3/cloud/amazon/change-default-database-passwords-on-linux.htm
+* https://knowledge.udacity.com/questions/26923
+* https://www.youtube.com/watch?v=5Fcf-8LPvws
+* https://serverfault.com/questions/88064/how-to-determine-the-hostname-from-an-ip-address-in-a-windows-network
 
 
 
