@@ -1,9 +1,9 @@
 # Linux_Server_Config
-Setup and Configuration details of a Flask Web Application on a AWS Lightsail Instance running Ubuntu
+Setup and Configuration details of a Flask Web Application on a AWS Lightsail Instance running Ubuntu. This was for the Udacity Full Stack Web Development Course, but the server has since been taken down. 
 
 # Server Details
 The server is built on a fresh install of Ubuntu 18.04\
-The server IP is: 13.211.172.187\
+The server IP is: 13.211.172.187
 Hostname: ec2-13-211-172-187.ap-southeast-2.compute.amazonaws.com\
 The server is hosted on Amazon Lightsail in the region ap-southeast-2a (Sydney)
 
